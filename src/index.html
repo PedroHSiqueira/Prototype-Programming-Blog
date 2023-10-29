@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,12 +9,12 @@
 </head>
 
 <body class="no-scrollbar bg-white">
-  <header class=" p-3 flex items-center justify-around shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]">
+  <header class="bg-white sticky top-0 p-3 flex items-center justify-around shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]">
     <img src="./img/logo.png" class="w-20 cursor-pointer">
     <div class="hidden items-center tablet:flex w-full ">
       <a href="#news" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">News</a>
       <a href="#courses" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Courses</a>
-      <a href="#" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Tips</a>
+      <a href="#books" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Tips</a>
       <a href="#" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Books</a>
       <a href="#" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Learning</a>
       <a href="#" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Category</a>
@@ -28,8 +28,9 @@
       <figure>
         <img src="./img/banner.png" class="mt-8 w-screen">
       </figure>
-
-      <div id="news" class="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-10 m-16">
+      
+      <h2 class="text-start mt-6 mb-2 mx-16 text-2xl font-bold">Tech News: </h2>
+      <div id="news" class="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-10 mx-16">
         <div>
           <img src="./img/bun.png" class="w-full h-1/2 rounded-md cursor-pointer">
           <p class="mt-3 text-lg font-semibold text">
@@ -61,20 +62,20 @@
             groundbreaking development that could significantly impact various real-world applications. <br><br>
             <span class="hidden desktop:block">
               The research,
-              centered on the advancements in unsupervised machine learning, marks a notable stride in the pursuit of more
+              centered on the advancements in unsupervised machine learning, marks a notable stride in the pursuit of
+              more
               generalized and versatile AI models.
-            </span></p>
+            </span>
+          </p>
         </div>
 
         <div class="block desktop:hidden">
-          <img src="./img/openai.png" class="w-full h-1/2 rounded-md cursor-pointer">
+          <img src="./img/laravel.png" class="w-full h-1/2 rounded-md cursor-pointer">
           <p class="mt-3 text-lg font-semibold text">
-            OpenAI, a pioneering research organization in artificial intelligence, has recently announced a
-            groundbreaking development that could significantly impact various real-world applications.<br><br>
-            <span class="hidden desktop:block">
-              The research,centered on the advancements in unsupervised machine learning, marks a notable stride in the pursuit of more
-              generalized and versatile AI models.
-            </span></p>
+            This week, the Laravel team released v10.29 with the ability to see all middleware in route:list, CLI dump
+            output updates, and more. A lot of small fixes, added tests, and miscellaneous
+            changes; see the changelog for a complete list of updates.<br><br>
+          </p>
         </div>
       </div>
     </section>
@@ -87,12 +88,13 @@
         </figure>
         <h2 class="mt-5 text-2xl font-bold">Harvad CS50's Artificial intelligence Course</h2>
         <p class="mt-4 text-lg">CS50 is an introductory course offered by Harvard University that provides students
-          with a comprehensive understanding of computer science, software development, and problem-solving skills. <br><br>
+          with a comprehensive understanding of computer science, software development, and problem-solving skills.
+          <br><br>
           <span class="hidden tablet:block">
             CS50 has garnered popularity for its engaging approach, even for individuals without prior programming
             experience. The course is often lauded for its strong community support, extensive online resources, and a
             dynamic learning environment that fosters a solid foundation in computer science.
-          </span >
+          </span>
         </p>
       </article>
 
@@ -101,15 +103,20 @@
           <img src="./img/harvardcourse2.jpg" class=" cursor-pointer rounded w-full h-1/2">
         </figure>
         <h2 class="mt-5 text-2xl font-bold">Creating and Maintaining Scalable Design Systems</h2>
-        <p class="mt-4 text-lg">CS50 is an introductory course offered by Harvard University that provides students
-          with a comprehensive understanding of computer science, software development, and problem-solving skills. <br><br>
+        <p class="mt-4 text-lg">This course explores the principles and practices of designing and managing scalable
+          design systems, focusing on creating cohesive, consistent, and adaptable design frameworks.
+          <br><br>
           <span class="hidden tablet:block">
-            CS50 has garnered popularity for its engaging approach, even for individuals without prior programming
-            experience. The course is often lauded for its strong community support, extensive online resources, and a
-            dynamic learning environment that fosters a solid foundation in computer science.
+            While there might not be a course specifically named "Creating and Maintaining Scalable Design Systems" at
+            Harvard, various programs within Harvard's Design, Computer Science, or Business schools might cover related
+            topics.
           </span>
         </p>
       </article>
+    </section>
+
+    <section id="books">
+
     </section>
   </main>
 </body>
