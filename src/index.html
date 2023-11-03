@@ -5,20 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../dist/output.css" />
-  <title>Document</title>
+  <title>Tech News</title>
 </head>
 
 <body class="no-scrollbar bg-white">
   <header class="bg-white sticky top-0 p-3 flex items-center justify-around shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]">
     <img src="./img/logo.png" class="w-20 cursor-pointer">
     <div class="hidden items-center tablet:flex w-full ">
-      <a href="#news" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">News</a>
-      <a href="#courses" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Courses</a>
-      <a href="#books" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Tips</a>
-      <a href="#" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Books</a>
-      <a href="#" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Learning</a>
-      <a href="#" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Category</a>
-      <a href="#" class=" m-auto relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Contact</a>
+      <a href="#news" class="animation-slide">News</a>
+      <a href="#courses" class="animation-slide">Courses</a>
+      <a href="#tips" class="animation-slide">Tips</a>
+      <a href="#" class="animation-slide">Books</a>
+      <a href="#" class="animation-slide">Learning</a>
+      <a href="#" class="animation-slide">Contact us</a>
     </div>
     <img src="./img/menu.png" class="tablet:hidden">
   </header>
@@ -29,11 +28,11 @@
         <img src="./img/banner.png" class="mt-8 w-screen">
       </figure>
       
-      <h2 class="text-start mt-6 mb-2 mx-16 text-2xl font-bold">Tech News: </h2>
-      <div id="news" class="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-10 mx-16">
-        <div>
-          <img src="./img/bun.png" class="w-full h-1/2 rounded-md cursor-pointer">
-          <p class="mt-3 text-lg font-semibold text">
+      <h2 id="news" class="scroll-mt-48 text-start mt-6 mb-2 mx-16 text-xl font-bold">Tech News: </h2>
+      <div class="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-10 mx-16">
+        <div class="mb-4">
+          <img src="./img/news/bun.png" class="w-full h-1/2 rounded-lg cursor-pointer">
+          <p class="mt-3 text-lg font-medium text">
             In a significant development in the world of programming, a new language named "Bun" has been introduced,
             aiming to revolutionize coding practices. <br><br>
             <span class="hidden desktop:block">
@@ -44,8 +43,8 @@
         </div>
 
         <div>
-          <img src="./img/copilot.png" class="w-full h-1/2 rounded-md cursor-pointer">
-          <p class="mt-3 text-lg font-semibold text">
+          <img src="./img/news/copilot.png" class="w-full h-1/2 rounded-lg cursor-pointer">
+          <p class="mt-3 text-lg font-medium text">
             GitHub Copilot, an AI-powered coding assistant developed by GitHub in collaboration with OpenAI, continues
             to make waves in the programming world. <br><br>
             <span class="hidden desktop:block">
@@ -56,8 +55,8 @@
         </div>
 
         <div>
-          <img src="./img/openai.png" class="w-full h-1/2 rounded-md cursor-pointer">
-          <p class="mt-3 text-lg font-semibold text">
+          <img src="./img/news/openai.png" class="w-full h-1/2 rounded-lg cursor-pointer">
+          <p class="mt-3 text-lg font-medium text">
             OpenAI, a pioneering research organization in artificial intelligence, has recently announced a
             groundbreaking development that could significantly impact various real-world applications. <br><br>
             <span class="hidden desktop:block">
@@ -70,21 +69,24 @@
         </div>
 
         <div class="block desktop:hidden">
-          <img src="./img/laravel.png" class="w-full h-1/2 rounded-md cursor-pointer">
+          <img src="./img/news/laravel.png" class="w-full h-1/2 rounded-md cursor-pointer">
           <p class="mt-3 text-lg font-semibold text">
             This week, the Laravel team released v10.29 with the ability to see all middleware in route:list, CLI dump
-            output updates, and more. A lot of small fixes, added tests, and miscellaneous
-            changes; see the changelog for a complete list of updates.<br><br>
+            output updates, and more.
+            <span class="hidden desktop:block">
+              A lot of small fixes, added tests, and miscellaneous
+              changes, see the changelog for a complete list of updates
+            </span><br><br>
           </p>
         </div>
       </div>
     </section>
 
     <h2 class="text-center text-3xl font-bold">Free Courses</h2>
-    <section id="courses" class="flex flex-col items-center Ltablet:flex-row ">
+    <section id="courses" class="flex flex-col items-center scroll-mt-44 Ltablet:flex-row">
       <article class="w-1/2 py-10 px-16 mobile:w-full smallPhone:w-full">
         <figure>
-          <img src="./img/harvardai.png" class="cursor-pointer rounded h-1/2">
+          <a href="https://pll.harvard.edu/course/introduction-data-science-python/2023-10" target="_blank"><img src="./img/courses/cs50.png" class="cursor-pointer rounded-lg h-1/2"></a>
         </figure>
         <h2 class="mt-5 text-2xl font-bold">Harvad CS50's Artificial intelligence Course</h2>
         <p class="mt-4 text-lg">CS50 is an introductory course offered by Harvard University that provides students
@@ -100,7 +102,7 @@
 
       <article class="w-1/2 py-10 px-16 mobile:w-full smallPhone:w-full">
         <figure>
-          <img src="./img/harvardcourse2.jpg" class=" cursor-pointer rounded w-full h-1/2">
+          <a href="https://pll.harvard.edu/course/cs50s-understanding-technology" target="_blank"><img src="./img/courses/systems.jpg" class="cursor-pointer rounded-lg w-full h-1/2"></a>
         </figure>
         <h2 class="mt-5 text-2xl font-bold">Creating and Maintaining Scalable Design Systems</h2>
         <p class="mt-4 text-lg">This course explores the principles and practices of designing and managing scalable
@@ -114,7 +116,50 @@
         </p>
       </article>
     </section>
+
+    <section>
+        <div class="bg-gray-800 mt-8 h-3 w-screen"></div>
+    </section>
+
+    <section class="mt-10">      
+      <h2 id="tips" class="scroll-mt-48 text-start mt-6 mb-2 mx-16 text-xl font-bold">Technology Tips: </h2>
+      <div class="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-10 mx-16">
+        <div>
+          <a href="https://tailwindcss.com/docs/installation" target="_blank"><img src="./img/tips/TailwindCSS.jpg" class="tips-div"></a>
+          <h2 class="text-center mt-2 text-lg font-bold">How To Install Tailwind CSS</h2>
+        </div>
+
+        <div>
+          <a href="https://vitejs.dev/guide/" target="_blank"><img src="./img/tips/vite.png" class="tips-div"></a> 
+          <h2 class="text-center mt-2 text-lg font-bold">Basic Setup for React using vite</h2>
+          </p>
+        </div>
+
+        <div>
+          <a href="https://www.jetbrains.com/pt-br/idea/" target="_blank"><img src="./img/tips/IntelliJ.jpg" class="tips-div"></a>
+          <h2 class="text-center mt-2 text-lg font-bold">How to install IntelliJ IDEA for Java and Kotlin</h2>
+        </div>
+
+        <div class="block desktop:hidden">
+          <a href="https://www.udemy.com/course/business-english-complete/" target="_blank"><img src="./img/tips/usa_flag.jpg" class="tips-div"></a>
+          <h2 class="text-center mt-2 text-lg font-bold">How english Can Boost Your Carrer</h2>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="h-16 mt-10">
+    <div class="flex items-center justify-between p-6 bg-gray-800">
+      <p class="text-slate-300 hidden text-sm max-w-xl mr-10 tablet:block">Except where otherwise noted, the content on this website is under the MIT license. <br> <span class="hidden desktop:block">External content is licensed by the respective authors. Please inform us when making use of the content.</span></p>
+      
+      <div class="text-slate-300">
+        <a href="#" class="mr-7 min-w-fit font-medium">About</a>
+        <a href="#" class="mr-7 min-w-fit font-medium">Privacy Policy</a>
+        <a href="#" class="mr-7 min-w-fit font-medium">Terms</a>
+        <a href="#" class="mr-12 min-w-fit font-medium">Log in</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
