@@ -24,3 +24,7 @@
 .tips-div {
   @apply w-full h-[70%] rounded-lg cursor-pointer shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px];
 }
+
+.header {
+  @apply bg-white sticky top-0 p-3 flex items-center justify-around shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]
+}
