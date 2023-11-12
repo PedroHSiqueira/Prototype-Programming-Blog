@@ -648,12 +648,24 @@ video {
   cursor: pointer;
 }
 
+.scroll-m-0 {
+  scroll-margin: 0px;
+}
+
 .scroll-mt-44 {
   scroll-margin-top: 11rem;
 }
 
 .scroll-mt-48 {
   scroll-margin-top: 12rem;
+}
+
+.scroll-mt-0 {
+  scroll-margin-top: 0px;
+}
+
+.scroll-mt-4 {
+  scroll-margin-top: 1rem;
 }
 
 .grid-cols-1 {
