@@ -534,10 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .mx-16 {
   margin-left: 4rem;
   margin-right: 4rem;
@@ -674,10 +670,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .gap-10 {
@@ -855,6 +847,10 @@ video {
   --tw-shadow: rgba(13, 38, 76, 0.19) 0px 9px 20px;
   --tw-shadow-colored: 0px 9px 20px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.learning-div {
+  width: 40%;
 }
 
 .header {

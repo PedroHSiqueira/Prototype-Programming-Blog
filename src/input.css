@@ -29,6 +29,10 @@
   @apply w-[70%] h-[60%] mt-5 mx-auto rounded-lg cursor-pointer shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px];
 }
 
+.learning-div {
+  @apply w-[40%]
+}
+
 .header {
   @apply bg-white sticky top-0 p-3 flex items-center justify-around shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]
 }
